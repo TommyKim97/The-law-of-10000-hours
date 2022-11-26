@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    width: 100vw;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #5B2386;
+}
+
+.app {
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    color: #fff;
+}
+
+.tit-logo {
+    width: 564px;
+    margin: 194px auto 132px;
+}
+
+.txt-phrase {
+    font-family: 'OTEnjoystoriesBA';
+    color: #F5DF4D;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.txt-desc {
+    font-size: 18px;
+    font-family: 'GmarketSansMedium';
+    font-weight: 400;
+    line-height: 30px;
+    margin: 78px auto 102px;
+}
+
+.txt-desc .str-desc {
+    font-family: 'GmarketSansBold';
+    font-size: 24px;
+}
+
+.txt-wannabe {
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    margin-bottom: 27px;
+}
+
+.txt-time {
+
+}
