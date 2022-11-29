@@ -28,6 +28,11 @@
     font-style: normal;
 }
 
+
+#modal {
+    display: none;
+}
+
 body {
     width: 100vw;
     text-align: center;
@@ -35,15 +40,29 @@ body {
     background-color: #5B2386;
 }
 
-.app {
+#app {
     font-family: 'GmarketSansMedium';
     font-weight: 400;
     color: #fff;
 }
 
 .tit-logo {
+    z-index: 10;
     width: 564px;
     margin: 194px auto 132px;
+}
+
+.tit-logo::after {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 225px;
+    height: 225px;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/clock.png);
+    background-position: center;
 }
 
 .txt-phrase {
@@ -58,7 +77,27 @@ body {
     font-family: 'GmarketSansMedium';
     font-weight: 400;
     line-height: 30px;
-    margin: 78px auto 102px;
+    margin-top: 78px;
+    margin-bottom: 102px;
+}
+
+.txt-desc::before, .txt-desc::after {
+    content: '';
+    position: absolute;
+    width: 37px;
+    height: 32px;
+}
+
+.txt-desc::before {
+    left: 0;
+    top: 25%;
+    background-image: url(../images/txt-left.png);
+}
+
+.txt-desc::after {
+    right: 0;
+    bottom: 25%;
+    background-image: url(../images/txt-right.png);
 }
 
 .txt-desc .str-desc {
@@ -67,11 +106,81 @@ body {
 }
 
 .txt-wannabe {
-    font-family: 'GmarketSansMedium';
     font-size: 24px;
     margin-bottom: 27px;
 }
 
-.txt-time {
+input {
+    padding: 16px 40px;
+    width: 228px;
+    height: 57px;
+    font-size: 24px;
+    border: none;
+    border-radius: 7px;
+    box-sizing: border-box;
+}
 
+input::placeholder {
+    color: #BABCBE;
+}
+
+.txt-time {
+    font-size: 24px;
+}
+
+.btn-promise {
+    margin-top: 115px;
+    margin-bottom: 147px;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    color: #5B2386;
+    background-color: #FCEE21;
+    border-radius: 56px;
+    font-size: 24px;
+    width: 565px;
+    height: 66px;
+}
+
+.txt-wannabe .result {
+    font-size: 72px;
+    font-weight: 700;
+}
+
+.btn-go {
+    margin-top: 127px;
+    margin-right: 12px;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    color: #5B2386;
+    background-color: #FCEE21;
+    border-radius: 56px;
+    font-size: 24px;
+    width: 356px;
+    height: 66px;
+}
+
+.btn-share {
+    margin-bottom: 136px;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    color: #5B2386;
+    background-color: #fff;
+    border-radius: 56px;
+    font-size: 24px;
+    width: 191px;
+    height: 66px;
+}
+
+.cont-footer {
+    margin-bottom: 50px;
+}
+.cont-footer img {
+    margin-bottom: 20px;
+    width: 125px;
+    display: inline-block;
+}
+
+.txt-footer {
+    font-family: 'Noto Sans KR';
+    font-size: 12px;
 }
